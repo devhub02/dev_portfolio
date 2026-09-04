@@ -1,32 +1,39 @@
-'use client';
+"use client";
 
-import { ArrowRight, Download, Mail } from 'lucide-react';
-import { Github, Linkedin, Twitter } from '@/components/SocialIcons';
-import Reveal from '@/components/ui/Reveal';
-import { ButtonLink } from '@/components/ui/Button';
+import { ArrowRight, Download, Mail } from "lucide-react";
+import { Github, Linkedin, Twitter } from "@/components/SocialIcons";
+import Reveal from "@/components/ui/Reveal";
+import { ButtonLink } from "@/components/ui/Button";
 
 /**
  * Proof points, not adjectives. Every number here is already asserted
  * elsewhere in the repo (Context.md / Contributions.tsx) — nothing invented.
  */
 const proof = [
-  { value: '7,000+', label: 'PyPI downloads', detail: 'run-git' },
-  { value: '13+', label: 'Merged PRs', detail: 'openagent-eval' },
-  { value: '18+', label: 'Eval metrics', detail: 'RAG + agents' },
-  { value: '2022–26', label: 'B.E. CSE', detail: 'BEU Gaya' },
+  { value: "7,000+", label: "PyPI downloads", detail: "run-git" },
+  { value: "13+", label: "Merged PRs", detail: "openagent-eval" },
+  { value: "18+", label: "Eval metrics", detail: "RAG + agents" },
+  { value: "2022–26", label: "B.tech in M.E", detail: "BEU Gaya" },
 ];
 
 const socials = [
-  { href: 'https://github.com/devhub02', label: 'GitHub', Icon: Github },
-  { href: 'https://www.linkedin.com/in/devhub02/', label: 'LinkedIn', Icon: Linkedin },
-  { href: 'https://x.com/devhub02', label: 'Twitter', Icon: Twitter },
-  { href: 'mailto:devhub9084@gmail.com', label: 'Email', Icon: Mail },
+  { href: "https://github.com/devhub02", label: "GitHub", Icon: Github },
+  {
+    href: "https://www.linkedin.com/in/devhub02/",
+    label: "LinkedIn",
+    Icon: Linkedin,
+  },
+  { href: "https://x.com/devhub02", label: "Twitter", Icon: Twitter },
+  { href: "mailto:devhub9084@gmail.com", label: "Email", Icon: Mail },
 ];
 
 export default function Hero() {
   return (
     <section className="relative overflow-hidden pt-36 pb-20 md:pt-44 md:pb-28">
-      <div className="grid-bg pointer-events-none absolute inset-0" aria-hidden />
+      <div
+        className="grid-bg pointer-events-none absolute inset-0"
+        aria-hidden
+      />
 
       <div className="relative mx-auto max-w-6xl px-6">
         <div className="grid items-start gap-14 lg:grid-cols-[minmax(0,1fr)_auto]">
@@ -49,10 +56,10 @@ export default function Hero() {
 
             <Reveal delay={0.1}>
               <p className="mt-5 max-w-xl text-lg text-ink-muted md:text-xl">
-                AI engineer building{' '}
-                <span className="text-ink">agentic systems</span>,{' '}
-                <span className="text-ink">LLM infrastructure</span> and{' '}
-                <span className="text-ink">developer tools</span>. Founder of{' '}
+                AI engineer building{" "}
+                <span className="text-ink">agentic systems</span>,{" "}
+                <span className="text-ink">LLM infrastructure</span> and{" "}
+                <span className="text-ink">developer tools</span>. Founder of{" "}
                 <a
                   href="https://github.com/devhub02"
                   target="_blank"
@@ -67,9 +74,8 @@ export default function Hero() {
 
             <Reveal delay={0.15}>
               <p className="prose-muted mt-5 max-w-xl text-[0.95rem]">
-                My core interest lies in designing systems, not just models —
-                retrieval, pipelines and deployment. I learn by building, and
-                ship it in the open.
+                My core interest lies in Learing and building intelligent systems — AI,
+                software and automation. I learn by building and shipping. .
               </p>
             </Reveal>
 
@@ -93,7 +99,7 @@ export default function Hero() {
                   <a
                     key={label}
                     href={href}
-                    target={href.startsWith('mailto:') ? undefined : '_blank'}
+                    target={href.startsWith("mailto:") ? undefined : "_blank"}
                     rel="noopener noreferrer"
                     aria-label={label}
                     className="rounded-lg p-2.5 text-ink-faint transition-colors hover:bg-[var(--surface)] hover:text-ink"
@@ -121,13 +127,16 @@ export default function Hero() {
                   className="h-56 w-56 rounded-full object-cover md:h-68 md:w-68"
                   onError={(e) => {
                     const target = e.currentTarget;
-                    target.style.display = 'none';
-                    const fallback = target.nextElementSibling as HTMLElement | null;
-                    if (fallback) fallback.style.display = 'flex';
+                    target.style.display = "none";
+                    const fallback =
+                      target.nextElementSibling as HTMLElement | null;
+                    if (fallback) fallback.style.display = "flex";
                   }}
                 />
                 <div className="hidden h-56 w-56 items-center justify-center rounded-full bg-[var(--bg-subtle)] md:h-68 md:w-68">
-                  <span className="text-5xl font-semibold text-ink-faint">DK</span>
+                  <span className="text-5xl font-semibold text-ink-faint">
+                    DK
+                  </span>
                 </div>
               </div>
 
