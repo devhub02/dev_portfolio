@@ -32,18 +32,14 @@ export default function About() {
         <Reveal className="space-y-5">
           <p className="text-lg leading-relaxed text-ink">
             I started where most people do — tutorials. What changed things was
-            shipping: putting a CLI on PyPI, watching strangers install it, and
+            shipping: forking real projects, reading their code, and
             discovering how much of the work is everything around the model.
           </p>
           <p className="prose-muted">
-            That is the throughline of everything here. RAGNOVA taught me that a
-            retrieval pipeline is only as good as its evaluation, which became{' '}
-            <span className="text-ink">openagent-eval</span>. Wanting local,
-            private commit messages became{' '}
-            <span className="text-ink">run-git</span> and{' '}
-            <span className="text-ink">AI Commit</span>. Wanting agents to reach
-            live information became{' '}
-            <span className="text-ink">mcp-web-search</span>.
+            That is the throughline of everything here. I learn by building
+            and contributing — whether it is an evaluation framework for
+            RAG systems, a screen recording tool, or a developer portfolio
+            that showcases real work.
           </p>
           <p className="prose-muted">
             I run <span className="text-ink">TripG</span> as the home for

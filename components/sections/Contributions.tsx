@@ -13,46 +13,16 @@ interface Contribution {
 
 const contributions: Contribution[] = [
   {
-    repo: 'langchain-ai/openwiki',
-    url: 'https://github.com/langchain-ai/openwiki',
-    description: 'Connector features, error handling, workflow preservation',
-    highlights: ['Connector infrastructure', 'Error handling', 'Workflow state'],
-  },
-  {
     repo: 'OpenAgentHQ/openagent-eval',
     url: 'https://github.com/OpenAgentHQ/openagent-eval',
-    description: '13+ merged PRs — review workflows, tests, releases, eval metrics',
-    highlights: ['13+ merged PRs', 'Review workflows', 'Test coverage', 'Release automation', '18+ eval metrics'],
+    description: 'Local-first evaluation framework for RAG systems and AI Agents — 18+ metrics, CLI + SDK, framework-agnostic.',
+    highlights: ['AI Evaluation', 'RAG', 'CLI', 'Python', 'Open Source'],
   },
   {
-    repo: 'devhub02/run-git',
-    url: 'https://github.com/devhub02/run-git',
-    description: 'PyPI package with 7K+ downloads — AI-powered Git CLI tooling',
-    highlights: ['PyPI releases', 'AI commit generation', 'CLI tooling', '7K+ downloads'],
-  },
-  {
-    repo: 'devhub02/ai-commit',
-    url: 'https://github.com/devhub02/ai-commit',
-    description: 'Privacy-first local LLM Git commit message generator',
-    highlights: ['Local LLM integration', 'Ollama support', 'Privacy-first', 'Offline capable'],
-  },
-  {
-    repo: 'devhub02/mcp-web-search',
-    url: 'https://github.com/devhub02/mcp-web-search',
-    description: 'MCP-compliant web search server for AI-agent integration',
-    highlights: ['MCP protocol', 'FastAPI backend', 'Server-Sent Events', 'JSON-RPC'],
-  },
-  {
-    repo: 'devhub02/modeldock',
-    url: 'https://github.com/devhub02/modeldock',
-    description: 'LM Studio runtime adapter, CI/CD fixes',
-    highlights: ['LM Studio adapter', 'CI/CD pipeline', 'Runtime integration'],
-  },
-  {
-    repo: 'devhub02/avenx-js',
-    url: 'https://github.com/devhub02/avenx-js',
-    description: 'Compiler documentation and tooling',
-    highlights: ['Documentation', 'Compiler internals', 'TypeScript tooling'],
+    repo: 'harshitboots/ScreenSight',
+    url: 'https://github.com/harshitboots/ScreenSight',
+    description: 'Screen recording and annotation tool for capturing and sharing visual feedback.',
+    highlights: ['Screen Recording', 'Python', 'Tool', 'Open Source'],
   },
 ];
 

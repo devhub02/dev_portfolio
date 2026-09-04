@@ -36,7 +36,6 @@ const stack = [
       { name: 'ChromaDB' },
       { name: 'Sentence Transformers', primary: true },
       { name: 'Scikit-learn' },
-      { name: 'RAG evaluation' },
     ],
   },
   {

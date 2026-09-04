@@ -1,20 +1,17 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { ArrowRight, Download, Mail } from "lucide-react";
 import { Github, Linkedin, Twitter } from "@/components/SocialIcons";
 import Reveal from "@/components/ui/Reveal";
 import { ButtonLink } from "@/components/ui/Button";
+import { fetchGitHubUser } from "@/utils/api";
 
-/**
- * Proof points, not adjectives. Every number here is already asserted
- * elsewhere in the repo (Context.md / Contributions.tsx) — nothing invented.
- */
-const proof = [
-  { value: "7,000+", label: "PyPI downloads", detail: "run-git" },
-  { value: "13+", label: "Merged PRs", detail: "openagent-eval" },
-  { value: "18+", label: "Eval metrics", detail: "RAG + agents" },
-  { value: "2022–26", label: "B.tech in M.E", detail: "BEU Gaya" },
-];
+interface ProofItem {
+  value: string;
+  label: string;
+  detail: string;
+}
 
 const socials = [
   { href: "https://github.com/devhub02", label: "GitHub", Icon: Github },
@@ -28,6 +25,25 @@ const socials = [
 ];
 
 export default function Hero() {
+  const [proof, setProof] = useState<ProofItem[]>([
+    { value: "—", label: "Repos", detail: "GitHub" },
+    { value: "—", label: "Followers", detail: "GitHub" },
+    { value: "—", label: "Following", detail: "GitHub" },
+    { value: "2022–26", label: "B.tech in M.E", detail: "BEU Gaya" },
+  ]);
+
+  useEffect(() => {
+    fetchGitHubUser("devhub02").then((user) => {
+      if (!user) return;
+      setProof([
+        { value: String(user.public_repos), label: "Repos", detail: "GitHub" },
+        { value: String(user.followers), label: "Followers", detail: "GitHub" },
+        { value: String(user.following), label: "Following", detail: "GitHub" },
+        { value: "2022–26", label: "B.tech in M.E", detail: "BEU Gaya" },
+      ]);
+    });
+  }, []);
+
   return (
     <section className="relative overflow-hidden pt-36 pb-20 md:pt-44 md:pb-28">
       <div

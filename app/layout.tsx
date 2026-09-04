@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     default: "Devendra Kumar | AI Engineer",
     template: "%s | Devendra Kumar",
   },
-  description: "Mechanical Engineer | AI | Software Development | Robotics & Automation. Founder of TripG, creator of run-git and openagent-eval.",
+  description: "Mechanical Engineer | AI | Software Development | Robotics & Automation. Founder of TripG, building developer tools and AI systems.",
   keywords: ["AI Engineer", "LLM", "GenAI", "RAG", "Agentic Systems", "MCP", "Open Source", "Developer Tools", "Devendra Kumar"],
   authors: [{ name: "Devendra Kumar" }],
   creator: "Devendra Kumar",

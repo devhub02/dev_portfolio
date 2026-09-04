@@ -88,7 +88,7 @@ export default function Projects() {
       id="projects"
       index="01"
       title="Selected work"
-      description="Systems I built end to end — retrieval pipelines, evaluation tooling and CLIs that people install and use."
+      description="Real projects from my GitHub — original work and open source contributions."
       action={
         <a
           href="https://github.com/devhub02?tab=repositories"

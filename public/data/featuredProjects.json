@@ -1,67 +1,31 @@
 {
   "projects": [
     {
-      "title": "run-git",
-      "description": "Lightweight Python CLI tool that simplifies Git workflows — stage, commit, and push with a single command. Available on PyPI with 7,000+ downloads.",
-      "icon": "Toolbox",
-      "gradient": "from-purple-500 to-indigo-600",
-      "github": "https://github.com/devhub02/run-git",
-      "tags": ["Git", "CLI", "Python", "PyPI"],
+      "title": "dev_portfolio",
+      "description": "Personal developer portfolio built with Next.js, TypeScript, and Tailwind CSS. Features dynamic GitHub API integration and responsive design.",
+      "icon": "Globe",
+      "gradient": "from-blue-500 to-indigo-600",
+      "github": "https://github.com/devhub02/dev_portfolio",
+      "tags": ["Next.js", "TypeScript", "Tailwind CSS", "Portfolio"],
       "featured": true
     },
     {
-      "title": "AI Commit",
-      "description": "Generates intelligent Git commit messages using local Ollama AI models. Free, private, and works offline! Zero data leaving your machine.",
-      "icon": "Terminal",
+      "title": "ScreenSight",
+      "description": "Screen recording and annotation tool for capturing and sharing visual feedback. Forked from harshitboots/ScreenSight.",
+      "icon": "Monitor",
       "gradient": "from-green-500 to-emerald-600",
-      "github": "https://github.com/devhub02/ai-commit",
-      "tags": ["CLI", "LLM", "Privacy", "Ollama"],
-      "featured": true
+      "github": "https://github.com/devhub02/ScreenSight",
+      "tags": ["Python", "Screen Recording", "Tool"],
+      "featured": false
     },
     {
-      "title": "OpenAgent Eval",
-      "description": "Local-first evaluation framework for RAG systems and AI Agents — 18+ metrics, CLI + SDK, framework-agnostic. Production-grade evals for your AI pipelines.",
+      "title": "openagent-eval",
+      "description": "Local-first evaluation framework for RAG systems and AI Agents — 18+ metrics, CLI + SDK, framework-agnostic. Forked from OpenAgentHQ/openagent-eval.",
       "icon": "Sparkles",
       "gradient": "from-violet-500 to-purple-600",
       "github": "https://github.com/devhub02/openagent-eval",
-      "tags": ["AI Evaluation", "RAG", "CLI", "Open Source"],
-      "featured": true
-    },
-    {
-      "title": "mcp-web-search",
-      "description": "Production-ready MCP server for web search with FastAPI, JSON-RPC, and tested protocol compatibility. Real-time search for AI agents.",
-      "icon": "Toolbox",
-      "gradient": "from-blue-500 to-indigo-600",
-      "github": "https://github.com/devhub02/mcp-web-search",
-      "tags": ["FastAPI", "MCP", "SSE", "AI Systems"],
-      "featured": true
-    },
-    {
-      "title": "RAG-based AI Application",
-      "description": "End-to-end RAG pipeline with LangChain, ChromaDB & Sentence Transformers for semantic search and LLM-powered Q&A.",
-      "icon": "Sparkles",
-      "gradient": "from-purple-500 to-pink-600",
-      "github": "https://github.com/devhub02/ragnova-rag-chatbot",
-      "tags": ["RAG", "NLP", "LLM", "ChromaDB"],
-      "featured": true
-    },
-    {
-      "title": "AutoML Studio",
-      "description": "End-to-end ML platform that automates EDA, preprocessing, training, and evaluation without writing code.",
-      "icon": "Workflow",
-      "gradient": "from-blue-500 to-cyan-600",
-      "github": "https://github.com/devhub02/AutoML-Studio-Pro-",
-      "tags": ["AutoML", "ML", "Platform", "No-Code"],
-      "featured": true
-    },
-    {
-      "title": "ML Mastery",
-      "description": "Structured Machine Learning learning repository with hands-on notebooks, practical examples, and quick reference guides.",
-      "icon": "Workflow",
-      "gradient": "from-cyan-500 to-blue-600",
-      "github": "https://github.com/devhub02/ml-mastery",
-      "tags": ["Machine Learning", "Education", "Notebooks", "Python"],
-      "featured": true
+      "tags": ["AI Evaluation", "RAG", "CLI", "Python"],
+      "featured": false
     }
   ]
 }
