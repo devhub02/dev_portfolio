@@ -128,12 +128,10 @@ export default function Hero() {
           </div>
 
           {/* ---------------------------------------------------------------- */}
-          {/* Portrait: a plain framed square. The rotating dashed ring and     */}
-          {/* multi-stop gradient blur previously around it read as decoration  */}
-          {/* for its own sake.                                                 */}
+          {/* Portrait: circular frame, no rectangular border.                  */}
           <Reveal delay={0.1} className="order-first lg:order-none">
             <div className="relative w-fit">
-              <div className="overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-1.5">
+              <div className="overflow-hidden rounded-full bg-[var(--surface)] p-1.5">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/images/mypic.jpeg"
