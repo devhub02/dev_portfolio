@@ -19,10 +19,28 @@ const contributions: Contribution[] = [
     highlights: ['Connector infrastructure', 'Error handling', 'Workflow state'],
   },
   {
-    repo: 'devhub02/openagent-eval',
-    url: 'https://github.com/devhub02/openagent-eval',
-    description: '13+ merged PRs — review workflows, tests, releases',
-    highlights: ['13+ merged PRs', 'Review workflows', 'Test coverage', 'Release automation'],
+    repo: 'OpenAgentHQ/openagent-eval',
+    url: 'https://github.com/OpenAgentHQ/openagent-eval',
+    description: '13+ merged PRs — review workflows, tests, releases, eval metrics',
+    highlights: ['13+ merged PRs', 'Review workflows', 'Test coverage', 'Release automation', '18+ eval metrics'],
+  },
+  {
+    repo: 'devhub02/run-git',
+    url: 'https://github.com/devhub02/run-git',
+    description: 'PyPI package with 7K+ downloads — AI-powered Git CLI tooling',
+    highlights: ['PyPI releases', 'AI commit generation', 'CLI tooling', '7K+ downloads'],
+  },
+  {
+    repo: 'devhub02/ai-commit',
+    url: 'https://github.com/devhub02/ai-commit',
+    description: 'Privacy-first local LLM Git commit message generator',
+    highlights: ['Local LLM integration', 'Ollama support', 'Privacy-first', 'Offline capable'],
+  },
+  {
+    repo: 'devhub02/mcp-web-search',
+    url: 'https://github.com/devhub02/mcp-web-search',
+    description: 'MCP-compliant web search server for AI-agent integration',
+    highlights: ['MCP protocol', 'FastAPI backend', 'Server-Sent Events', 'JSON-RPC'],
   },
   {
     repo: 'devhub02/modeldock',
@@ -33,8 +51,8 @@ const contributions: Contribution[] = [
   {
     repo: 'devhub02/avenx-js',
     url: 'https://github.com/devhub02/avenx-js',
-    description: 'Compiler documentation',
-    highlights: ['Documentation', 'Compiler internals'],
+    description: 'Compiler documentation and tooling',
+    highlights: ['Documentation', 'Compiler internals', 'TypeScript tooling'],
   },
 ];
 

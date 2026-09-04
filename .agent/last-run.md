@@ -3,7 +3,7 @@
 ## Summary
 - **Date**: 2026-07-26
 - **Branch**: `agent/update-2026-07-26`
-- **PR**: https://github.com/devhub02/HK-Portfolio/pull/1
+- **PR**: https://github.com/devhub02/DEV-Portfolio/pull/1
 - **Status**: Completed successfully
 
 ## Sources Checked

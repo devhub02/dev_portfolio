@@ -1,8 +1,17 @@
 {
   "projects": [
     {
+      "title": "run-git",
+      "description": "Lightweight Python CLI tool that simplifies Git workflows — stage, commit, and push with a single command. Available on PyPI with 7,000+ downloads.",
+      "icon": "Toolbox",
+      "gradient": "from-purple-500 to-indigo-600",
+      "github": "https://github.com/devhub02/run-git",
+      "tags": ["Git", "CLI", "Python", "PyPI"],
+      "featured": true
+    },
+    {
       "title": "AI Commit",
-      "description": "Generates intelligent Git commit messages using local Ollama AI models. Free, private, and works offline!",
+      "description": "Generates intelligent Git commit messages using local Ollama AI models. Free, private, and works offline! Zero data leaving your machine.",
       "icon": "Terminal",
       "gradient": "from-green-500 to-emerald-600",
       "github": "https://github.com/devhub02/ai-commit",
@@ -10,8 +19,26 @@
       "featured": true
     },
     {
+      "title": "OpenAgent Eval",
+      "description": "Local-first evaluation framework for RAG systems and AI Agents — 18+ metrics, CLI + SDK, framework-agnostic. Production-grade evals for your AI pipelines.",
+      "icon": "Sparkles",
+      "gradient": "from-violet-500 to-purple-600",
+      "github": "https://github.com/devhub02/openagent-eval",
+      "tags": ["AI Evaluation", "RAG", "CLI", "Open Source"],
+      "featured": true
+    },
+    {
+      "title": "mcp-web-search",
+      "description": "Production-ready MCP server for web search with FastAPI, JSON-RPC, and tested protocol compatibility. Real-time search for AI agents.",
+      "icon": "Toolbox",
+      "gradient": "from-blue-500 to-indigo-600",
+      "github": "https://github.com/devhub02/mcp-web-search",
+      "tags": ["FastAPI", "MCP", "SSE", "AI Systems"],
+      "featured": true
+    },
+    {
       "title": "RAG-based AI Application",
-      "description": "End-to-end RAG pipeline with LangChain, ChromaDB & Sentence Transformers for semantic search and LLM-powered Q&A",
+      "description": "End-to-end RAG pipeline with LangChain, ChromaDB & Sentence Transformers for semantic search and LLM-powered Q&A.",
       "icon": "Sparkles",
       "gradient": "from-purple-500 to-pink-600",
       "github": "https://github.com/devhub02/ragnova-rag-chatbot",
@@ -20,7 +47,7 @@
     },
     {
       "title": "AutoML Studio",
-      "description": "End-to-end ML platform that automates EDA, preprocessing, training, and evaluation without writing code",
+      "description": "End-to-end ML platform that automates EDA, preprocessing, training, and evaluation without writing code.",
       "icon": "Workflow",
       "gradient": "from-blue-500 to-cyan-600",
       "github": "https://github.com/devhub02/AutoML-Studio-Pro-",
@@ -28,39 +55,12 @@
       "featured": true
     },
     {
-      "title": "run-git",
-      "description": "Lightweight Python CLI tool that simplifies Git workflows — stage, commit, and push with a single command",
-      "icon": "Toolbox",
-      "gradient": "from-purple-500 to-indigo-600",
-      "github": "https://github.com/devhub02/run-git",
-      "tags": ["Git", "CLI", "Python", "PyPI"],
-      "featured": true
-    },
-    {
-      "title": "mcp-web-search",
-      "description": "Production-ready MCP server for web search with FastAPI, JSON-RPC, and tested protocol compatibility",
-      "icon": "Toolbox",
-      "gradient": "from-blue-500 to-indigo-600",
-      "github": "https://github.com/devhub02/mcp-web-search",
-      "tags": ["FastAPI", "MCP", "SSE", "AI Systems"],
-      "featured": true
-    },
-    {
       "title": "ML Mastery",
-      "description": "Structured Machine Learning learning repository with hands-on notebooks, practical examples, and quick reference guides",
+      "description": "Structured Machine Learning learning repository with hands-on notebooks, practical examples, and quick reference guides.",
       "icon": "Workflow",
       "gradient": "from-cyan-500 to-blue-600",
       "github": "https://github.com/devhub02/ml-mastery",
       "tags": ["Machine Learning", "Education", "Notebooks", "Python"],
-      "featured": true
-    },
-    {
-      "title": "OpenAgent Eval",
-      "description": "Local-first evaluation framework for RAG systems and AI Agents — 18+ metrics, CLI + SDK, framework-agnostic",
-      "icon": "Sparkles",
-      "gradient": "from-violet-500 to-purple-600",
-      "github": "https://github.com/devhub02/openagent-eval",
-      "tags": ["AI Evaluation", "RAG", "CLI", "Open Source"],
       "featured": true
     }
   ]

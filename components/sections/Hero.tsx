@@ -118,7 +118,7 @@ export default function Hero() {
                   alt="Devendra Kumar"
                   width={272}
                   height={272}
-                  className="h-56 w-56 rounded-xl object-cover md:h-68 md:w-68"
+                  className="h-56 w-56 rounded-full object-cover md:h-68 md:w-68"
                   onError={(e) => {
                     const target = e.currentTarget;
                     target.style.display = 'none';
@@ -126,7 +126,7 @@ export default function Hero() {
                     if (fallback) fallback.style.display = 'flex';
                   }}
                 />
-                <div className="hidden h-56 w-56 items-center justify-center rounded-xl bg-[var(--bg-subtle)] md:h-68 md:w-68">
+                <div className="hidden h-56 w-56 items-center justify-center rounded-full bg-[var(--bg-subtle)] md:h-68 md:w-68">
                   <span className="text-5xl font-semibold text-ink-faint">DK</span>
                 </div>
               </div>

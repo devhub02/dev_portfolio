@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://devendra.me'),
+  metadataBase: new URL('https://devhub02.vercel.app'),
   title: {
     default: "Devendra Kumar | AI Engineer",
     template: "%s | Devendra Kumar",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Devendra Kumar | AI Engineer",
     description: "Building agentic systems, LLM infrastructure and developer tools in the open.",
-    url: "https://devendra.me",
+    url: "https://devhub02.vercel.app",
     siteName: "Devendra Kumar",
     locale: "en_US",
     type: "website",
@@ -62,9 +62,9 @@ export const metadata: Metadata = {
     images: ["/og-image.svg"],
   },
   alternates: {
-    canonical: "https://devendra.me",
+    canonical: "https://devhub02.vercel.app",
     languages: {
-      en: "https://devendra.me",
+      en: "https://devhub02.vercel.app",
     },
   },
 };
