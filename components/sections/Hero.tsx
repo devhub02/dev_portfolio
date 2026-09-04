@@ -29,7 +29,7 @@ export default function Hero() {
     { value: "—", label: "Repos", detail: "GitHub" },
     { value: "—", label: "Followers", detail: "GitHub" },
     { value: "—", label: "Following", detail: "GitHub" },
-    { value: "2022–26", label: "B.tech in M.E", detail: "BEU Gaya" },
+    { value: "2023-27", label: "B.tech in M.E", detail: "BEU Gaya" },
   ]);
 
   useEffect(() => {
@@ -39,7 +39,7 @@ export default function Hero() {
         { value: String(user.public_repos), label: "Repos", detail: "GitHub" },
         { value: String(user.followers), label: "Followers", detail: "GitHub" },
         { value: String(user.following), label: "Following", detail: "GitHub" },
-        { value: "2022–26", label: "B.tech in M.E", detail: "BEU Gaya" },
+        { value: "2023-27", label: "B.tech in M.E", detail: "BEU Gaya" },
       ]);
     });
   }, []);
@@ -72,10 +72,11 @@ export default function Hero() {
 
             <Reveal delay={0.1}>
               <p className="mt-5 max-w-xl text-lg text-ink-muted md:text-xl">
-                AI engineer building{" "}
-                <span className="text-ink">agentic systems</span>,{" "}
-                <span className="text-ink">LLM infrastructure</span> and{" "}
-                <span className="text-ink">developer tools</span>. Founder of{" "}
+                Mechanical Engineer building at the intersection of{" "}
+                <span className="text-ink">AI</span>,{" "}
+                <span className="text-ink">software</span>,{" "}
+                <span className="text-ink">robotics</span>, and{" "}
+                <span className="text-ink">mechanical engineering</span>. Founder of{" "}
                 <a
                   href="https://github.com/devhub02"
                   target="_blank"
@@ -84,14 +85,14 @@ export default function Hero() {
                 >
                   TripG
                 </a>
-                .
               </p>
             </Reveal>
 
             <Reveal delay={0.15}>
               <p className="prose-muted mt-5 max-w-xl text-[0.95rem]">
-                My core interest lies in Learing and building intelligent systems — AI,
-                software and automation. I learn by building and shipping. .
+                My core interest lies in building intelligent systems across engineering,
+                AI, software, and robotics. I learn by building, experimenting, and
+                turning ideas into working solutions.
               </p>
             </Reveal>
 

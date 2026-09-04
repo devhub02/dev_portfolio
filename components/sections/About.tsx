@@ -24,29 +24,33 @@ export default function About() {
       id="about"
       index="05"
       title="About"
-      description="CS engineering student at BEU Gaya and AI engineer. I build in the open and treat every project as a system, not a notebook."
+      description="Mechanical Engineering student and AI/software developer. I build intelligent systems and treat every project as something to engineer, not just experiment with."
       className="border-y border-[var(--border)] bg-[var(--bg-subtle)]"
     >
       <div className="grid gap-14 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)]">
         {/* Narrative */}
         <Reveal className="space-y-5">
           <p className="text-lg leading-relaxed text-ink">
-            I started where most people do — tutorials. What changed things was
-            shipping: forking real projects, reading their code, and
-            discovering how much of the work is everything around the model.
+            Mechanical Engineering student and AI/software developer. I build
+            intelligent systems and treat every project as something to engineer,
+            not just experiment with.
           </p>
           <p className="prose-muted">
-            That is the throughline of everything here. I learn by building
-            and contributing — whether it is an evaluation framework for
-            RAG systems, a screen recording tool, or a developer portfolio
-            that showcases real work.
+            I started with mechanical engineering, but my curiosity quickly moved
+            beyond traditional engineering. Learning AI and software development
+            showed me how much can be built by combining engineering fundamentals
+            with code, automation, and intelligent systems.
           </p>
           <p className="prose-muted">
-            I run <span className="text-ink">TripG</span> as the home for
-            that work — agentic systems, LLM infrastructure and developer
-            tooling, all public, all reviewable. I am currently looking for an
-            AI/ML or GenAI internship where the problems are real and the
-            feedback loop is short.
+            That became the throughline of my work. I learn by building and
+            experimenting, whether it is an AI system, a developer tool, a
+            robotics project, or a software application.
+          </p>
+          <p className="prose-muted">
+            I'm interested in AI, software development, robotics, automation,
+            and mechanical systems, with a focus on turning ideas into practical,
+            working solutions. I build to understand how things work, improve
+            them through iteration, and ship what I learn.
           </p>
         </Reveal>
 
