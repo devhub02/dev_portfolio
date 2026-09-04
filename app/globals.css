@@ -1,0 +1,277 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   Design tokens
+   Every colour on the site resolves through these variables so that light
+   and dark mode are a single source of truth instead of hardcoded slate-*
+   utilities. Dark is the default; `.light` on <html> flips the palette.
+   ========================================================================== */
+
+:root {
+  /* Surfaces — near-black with a cool cast, not pure black */
+  --bg: #08090b;
+  --bg-subtle: #0b0d10;
+  --surface: #101216;
+  --surface-hover: #15181d;
+
+  /* Hairlines */
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+
+  /* Text ramp */
+  --text: #e9ebee;
+  --text-muted: #99a1ac;
+  --text-faint: #6a727e;
+
+  /* Single accent, desaturated so it reads as engineering, not neon */
+  --accent: #7c93ff;
+  --accent-hover: #93a6ff;
+  --accent-soft: rgba(124, 147, 255, 0.12);
+  --accent-border: rgba(124, 147, 255, 0.32);
+  --accent-contrast: #0a0c10;
+
+  /* Status */
+  --positive: #4ade80;
+  --positive-soft: rgba(74, 222, 128, 0.12);
+
+  /* Selection + focus */
+  --focus-ring: rgba(124, 147, 255, 0.55);
+}
+
+.light {
+  --bg: #fcfcfb;
+  --bg-subtle: #f5f5f4;
+  --surface: #ffffff;
+  --surface-hover: #f7f7f6;
+
+  --border: rgba(15, 18, 22, 0.10);
+  --border-strong: rgba(15, 18, 22, 0.20);
+
+  --text: #14171c;
+  --text-muted: #575e69;
+  --text-faint: #7c848f;
+
+  --accent: #3f52d9;
+  --accent-hover: #3444bb;
+  --accent-soft: rgba(63, 82, 217, 0.08);
+  --accent-border: rgba(63, 82, 217, 0.28);
+  --accent-contrast: #ffffff;
+
+  --positive: #15803d;
+  --positive-soft: rgba(21, 128, 61, 0.10);
+
+  --focus-ring: rgba(63, 82, 217, 0.45);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-subtle: var(--bg-subtle);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-line: var(--border);
+  --color-line-strong: var(--border-strong);
+  --color-ink: var(--text);
+  --color-ink-muted: var(--text-muted);
+  --color-ink-faint: var(--text-faint);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-soft: var(--accent-soft);
+  --color-positive: var(--positive);
+
+  --font-sans: var(--font-geist), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-geist), system-ui, sans-serif;
+  font-feature-settings: "cv11", "ss01";
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ==========================================================================
+   Typography helpers
+   ========================================================================== */
+
+.display {
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+  text-wrap: balance;
+}
+
+.heading {
+  letter-spacing: -0.022em;
+  line-height: 1.12;
+  text-wrap: balance;
+}
+
+.prose-muted {
+  color: var(--text-muted);
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+/* Mono metadata: section indices, labels, tags, timestamps */
+.mono-label {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.mono-meta {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.75rem;
+  color: var(--text-faint);
+}
+
+/* ==========================================================================
+   Surfaces
+   ========================================================================== */
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+/* Interactive card: border and surface shift on hover — no scale, no glow */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  transition: background-color 0.18s ease, border-color 0.18s ease;
+}
+
+.card:hover {
+  background: var(--surface-hover);
+  border-color: var(--border-strong);
+}
+
+.card-accent:hover {
+  border-color: var(--accent-border);
+}
+
+.hairline {
+  border-color: var(--border);
+}
+
+/* Small pill used for tech tags and metadata chips */
+.tag {
+  font-family: var(--font-geist-mono), ui-monospace, monospace;
+  font-size: 0.6875rem;
+  line-height: 1;
+  padding: 0.375rem 0.5rem;
+  border-radius: 4px;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.tag-accent {
+  background: var(--accent-soft);
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
+
+/* ==========================================================================
+   Decoration
+   ========================================================================== */
+
+/* Faint engineering grid — much lower contrast than the previous version */
+.grid-bg {
+  background-image:
+    linear-gradient(to right, var(--border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--border) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 10%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 10%, transparent 75%);
+}
+
+/* Horizontal rule that fades at both ends */
+.rule-fade {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border-strong), transparent);
+}
+
+/* Underline that grows on hover — replaces the scale-up hover everywhere */
+.link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 0.2s ease;
+}
+
+.link-underline:hover {
+  background-size: 100% 1px;
+}
+
+/* Live availability dot */
+.pulse-dot {
+  position: relative;
+}
+
+.pulse-dot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: var(--positive);
+  animation: ping 2.4s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping {
+  0% { transform: scale(1); opacity: 0.7; }
+  75%, 100% { transform: scale(2.4); opacity: 0; }
+}
+
+/* ==========================================================================
+   Accessibility: honour the OS reduced-motion preference site-wide.
+   Framer Motion variants are additionally gated in components/ui/Reveal.tsx.
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Framer Motion writes its `initial` state as an inline style, including in
+     the server-rendered HTML. Overriding it here — rather than branching on the
+     media query inside the component — means reveal content is visible from the
+     first paint no matter how hydration goes. */
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
